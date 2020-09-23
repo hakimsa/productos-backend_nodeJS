@@ -63,7 +63,7 @@ function updateProducto(req, res){
     let idCoche = req.params.id
     let param = req.body
 
-    //{new:true}  ===>  hace que devuelva el nuevo coche insertado
+    //{new:true}  ===>  hace que devuelva el nuevo producto insertado
     Producto.findByIdAndUpdate(idCoche, param, {new:true}).then(
         productoActualizado => {
             res.status(200).send( {accion:'update', data: productoActualizado} )
