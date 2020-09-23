@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
 
 
-   // midle ware
+   // midle ware Ad1234
 app.use( (req, res, next) => {
 	//permitimos que las peticiones se puedan hacer desde cualquier sitio
 	res.header('Access-Control-Allow-Origin', '*')
@@ -36,7 +36,7 @@ app.delete('/producto/:id', ProductoController.deleteProducto);
 
                                          //name base datos
 
-mongoose.connect('mongodb+srv://hakim:Ad1234@cluster0-y69ki.mongodb.net/productos?retryWrites=true',
+mongoose.connect('mongodb+srv://hakim:******@cluster0-y69ki.mongodb.net/productos?retryWrites=true',
  { useNewUrlParser: true, useFindAndModify:false }).then(
 	
     () => {  
