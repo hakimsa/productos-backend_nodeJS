@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "la aplicacion de catalogo de productos node-js",
   "main": "index.js",
-  "scripts":
+  "scripts":{
     "serve": "node index.js",
     "start": "node index.js",
 
