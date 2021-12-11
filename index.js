@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const PORT = process.env.PORT || 8888;
 const app = express();
 const logEvent=require("./logEvents/LogEvents");
-
+const {serv,user,pass,cluster,db}=require("./dbConfig/conf")
 app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
 
@@ -34,8 +34,9 @@ app.delete('/producto/:id', ProductoController.deleteProducto);
 
 
                                          //name base datos
-
-mongoose.connect('mongodb+srv://hakim:Ad1234@cluster0-y69ki.mongodb.net/productos?retryWrites=true',
+var conexion=(serv+user+pass+cluster+db+"?retryWrites=true");
+console.log(conexion)
+mongoose.connect(conexion.toString(),
  { useNewUrlParser: true, useFindAndModify:false }).then(
 	
     () => {  

@@ -1,3 +1,42 @@
 20211211	19:25:48	El servidor se arranco correctamente
 20211211	19:25:48	Get all:200  ok
 20211211	19:27:41	El servidor se arranco correctamente
+20211211	19:32:49	El servidor se arranco correctamente
+20211211	19:33:00	El servidor se arranco correctamente
+20211211	19:36:31	El servidor se arranco correctamente
+20211211	19:38:49	El servidor se arranco correctamente
+20211211	19:39:23	El servidor se arranco correctamente
+20211211	19:40:09	El servidor se arranco correctamente
+20211211	19:40:40	El servidor se arranco correctamente
+20211211	19:41:55	El servidor se arranco correctamente
+20211211	19:43:06	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:43:12	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:43:17	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:43:28	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:43:31	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:45:08	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:45:08	MongoParseError: URI does not have hostname, domain name and tld
+20211211	19:45:38	MongoParseError: Invalid connection string
+20211211	19:45:38	MongoParseError: Invalid connection string
+20211211	19:47:13	MongoParseError: Invalid connection string
+20211211	19:47:13	MongoParseError: Invalid connection string
+20211211	19:47:30	MongoParseError: Invalid connection string
+20211211	19:47:30	MongoParseError: Invalid connection string
+20211211	19:48:22	MongoParseError: Invalid connection string
+20211211	19:48:22	MongoParseError: Invalid connection string
+20211211	19:48:41	MongoParseError: Invalid connection string
+20211211	19:48:41	MongoParseError: Invalid connection string
+20211211	19:50:09	MongoError: authentication fail
+20211211	19:50:09	MongoError: authentication fail
+20211211	19:51:17	MongoError: authentication fail
+20211211	19:51:17	MongoError: authentication fail
+20211211	19:51:46	MongoError: authentication fail
+20211211	19:51:46	MongoError: authentication fail
+20211211	19:52:21	MongoError: authentication fail
+20211211	19:52:21	MongoError: authentication fail
+20211211	19:52:40	El servidor se arranco correctamente
+20211211	19:52:40	Get all:200  ok
+20211211	19:52:40	Get all:200  ok
+20211211	19:52:40	Get all:200  ok
+20211211	19:52:40	Get all:200  ok
+20211211	19:53:11	El servidor se arranco correctamente
