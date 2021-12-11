@@ -1,4 +1,5 @@
 let Producto = new require('./ModeloProducto')
+const logEvent=require("./logEvents/LogEvents");
 
 function getProducto(req, res){
     let idProducto = req.params.id
@@ -14,24 +15,26 @@ function getProducto(req, res){
     ).catch(
         err => {
             res.status(500).send( {accion:'get one', mensaje:'problema el obtener un producto'} )
+            logEvent(err);
         }
     )
 }
 
 function getProductos(req, res){
-   
-    console.log("Listado de Productos")
     Producto.find().exec().then(
         productos => {
             if(!productos){
-                res.status(404).send( {accion:'get all', mensaje:'No hay productos'} )
+       res.status(404).send( {accion:'get all', mensaje:'No hay productos'} )
+             logEvent("Get all:404  Not found ");
             }else{
                 res.status(200).send( {accion:'get all', data: productos})
+                logEvent("Get all:200  ok");
             }
         }
     ).catch(
         err => { 
             res.status(500).send( {accion:'get all', mensaje:'problema al leer los productos:'+err} )
+            logEvent(err);
         }
     )
 
@@ -55,6 +58,7 @@ function saveProducto(req, res){
     ).catch(
         err => { 
             res.status(500).send( {accion:'save', mensaje:'problema al guardar un producto:'+err} )
+            logEvent(err);
         }
     )
 }
@@ -71,6 +75,7 @@ function updateProducto(req, res){
     ).catch(
         err => { 
             res.status(500).send( {accion:'update', mensaje:'problema al actualizar un producto:'+err} )
+           logEvent(err);
         }
     )
 }
@@ -84,7 +89,7 @@ function deleteProducto(req, res){
     ).catch(
         err => {
             res.status(500).send( {accion:'delete', mensaje:'problema al borrar un coche:'+err} )
-       
+            logEvent(err);
         }
     )
 }

@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "la aplicacion de catalogo de productos node-js",
   "main": "index.js",
-  "scripts":{
-    "serve": "node index.js",
-    "start": "node index.js",
-
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [
     "catalogo",
@@ -16,10 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "date-fns": "^2.27.0",
+    "express": "^4.17.1",
     "mongoose": "^5.4.12"
-  },
-  "devDependencies": {
-    
   }
 }

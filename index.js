@@ -4,6 +4,7 @@ const ProductoController = require('./ProductoController');
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 8888;
 const app = express();
+const logEvent=require("./logEvents/LogEvents");
 
 app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
@@ -25,8 +26,6 @@ app.use( (req, res, next) => {
 
 // midle ware
 
-
-
 app.get('/producto/:id', ProductoController.getProducto);
 app.get('/productos', ProductoController.getProductos);
 app.post('/producto', ProductoController.saveProducto);
@@ -36,15 +35,18 @@ app.delete('/producto/:id', ProductoController.deleteProducto);
 
                                          //name base datos
 
-mongoose.connect('mongodb+srv://hakim:******@cluster0-y69ki.mongodb.net/productos?retryWrites=true',
+mongoose.connect('mongodb+srv://hakim:Ad1234@cluster0-y69ki.mongodb.net/productos?retryWrites=true',
  { useNewUrlParser: true, useFindAndModify:false }).then(
 	
     () => {  
-        console.log('Conexión con mongo correcta') 
+    
         app.listen(PORT, ()=>{
-            console.log('El servidor se arranco correctamente')
+            console.log('Server Disponible')
+			logEvent("El servidor se arranco correctamente");
         })
-    },err => { console.log('fallo en la base de datos:'+err) }
+    },err => { 
+		logEvent(err);
+		console.log('fallo en la base de datos:'+ err) }
 )
 
 
