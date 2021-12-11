@@ -10,6 +10,7 @@ function getProducto(req, res){
                 res.status(404).send( {accion:'get one', mensaje:'No existe el producto con ese id'} )
             }else{
                 res.status(200).send( {accion:'get one', data: productoEncontrado})
+                logEvent(idProducto +" cached ok ");
             }
         }
     ).catch(
@@ -42,7 +43,7 @@ function getProductos(req, res){
 
 function saveProducto(req, res){
     let param = req.body
-    console.log(param)
+
     // res.status(200).send( {accion:"save", data: param})
     let producto = new Producto();
     producto.nombre = param.nombre
@@ -54,6 +55,7 @@ function saveProducto(req, res){
     producto.save().then(
         productoGuardado => {
             res.status(200).send( {accion:'save', data: productoGuardado} )
+            logEvent(producto.nombre +"Saved ok");
         }
     ).catch(
         err => { 
@@ -64,13 +66,15 @@ function saveProducto(req, res){
 }
 
 function updateProducto(req, res){
-    let idCoche = req.params.id
+    let idProducto = req.params.id
     let param = req.body
 
     //{new:true}  ===>  hace que devuelva el nuevo producto insertado
-    Producto.findByIdAndUpdate(idCoche, param, {new:true}).then(
+    
+    Producto.findByIdAndUpdate(idProducto,param, {new:true}).then(
         productoActualizado => {
             res.status(200).send( {accion:'update', data: productoActualizado} )
+            logEvent( idProducto+" updated ok");
         }
     ).catch(
         err => { 
@@ -79,12 +83,12 @@ function updateProducto(req, res){
         }
     )
 }
-
 function deleteProducto(req, res){
     var idProducto = req.params.id
     Producto.findByIdAndDelete(idProducto).then(
         productoBorrado => {
             res.status(200).send( {accion:'delete', data: productoBorrado} )
+            logEvent( idProducto+" Deleted ok");
         }
     ).catch(
         err => {

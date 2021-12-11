@@ -12,11 +12,11 @@ const logItem= dateTime+"\t"+message+"\n";
 console.log(logItem);
 try{
 
-    if(!fs.existsSync(path.join(__dirname,"logs"))){
-        await fsPromises.mkdir(path.join(__dirname,"logs"))
+    if(!fs.existsSync(path.join(__dirname,"..","logs"))){
+        await fsPromises.mkdir(path.join(__dirname,"..","logs"))
     }
 
-     await fsPromises.appendFile(path.join(__dirname,"logs",formatDateLog+"_Acces_Error.log"),logItem);
+     await fsPromises.appendFile(path.join(__dirname,"..","logs",formatDateLog+"_Acces_Error.log"),logItem);
 
 }catch(err){
  console.log(err);

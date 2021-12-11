@@ -8,7 +8,7 @@ const logEvent=require("./logEvents/LogEvents");
 const {serv,user,pass,cluster,db}=require("./dbConfig/conf")
 app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
-
+const conexion=(serv+user+pass+cluster+db+"?retryWrites=true");
 app.use( (req, res, next) => {
 	//permitimos que las peticiones se puedan hacer desde cualquier sitio
 	res.header('Access-Control-Allow-Origin', '*')
@@ -27,7 +27,7 @@ app.post('/producto', ProductoController.saveProducto);
 app.put('/producto/:id', ProductoController.updateProducto);
 app.delete('/producto/:id', ProductoController.deleteProducto);
                                
-var conexion=(serv+user+pass+cluster+db+"?retryWrites=true");
+
 
 mongoose.connect(conexion.toString(),
  { useNewUrlParser: true, useFindAndModify:false }).then(
@@ -35,11 +35,11 @@ mongoose.connect(conexion.toString(),
     () => {  
     
         app.listen(PORT, ()=>{
-			logEvent("El servidor se arranco correctamente");
+	    logEvent("El servidor se arranco correctamente");
         })
     },err => { 
 		logEvent(err);
-		console.log('fallo en la base de datos:'+ err) }
+		 }
 )
 
 

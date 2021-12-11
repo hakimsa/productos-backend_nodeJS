@@ -6,7 +6,8 @@ const ProductoSchema = Schema(
         nombre:String,
         descripcion:String,
         precio:String,
-        categoria:String
+        categoria:String,
+     
     }
 )
 //aqui va  nombre de la collection
