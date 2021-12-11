@@ -9,8 +9,6 @@ const {serv,user,pass,cluster,db}=require("./dbConfig/conf")
 app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
 
-
-   // midle ware Ad1234
 app.use( (req, res, next) => {
 	//permitimos que las peticiones se puedan hacer desde cualquier sitio
 	res.header('Access-Control-Allow-Origin', '*')
@@ -23,26 +21,20 @@ app.use( (req, res, next) => {
 	next(); // para que se salga de esta función
 })
 
-
-// midle ware
-
 app.get('/producto/:id', ProductoController.getProducto);
 app.get('/productos', ProductoController.getProductos);
 app.post('/producto', ProductoController.saveProducto);
 app.put('/producto/:id', ProductoController.updateProducto);
 app.delete('/producto/:id', ProductoController.deleteProducto);
-
-
-                                         //name base datos
+                               
 var conexion=(serv+user+pass+cluster+db+"?retryWrites=true");
-console.log(conexion)
+
 mongoose.connect(conexion.toString(),
  { useNewUrlParser: true, useFindAndModify:false }).then(
 	
     () => {  
     
         app.listen(PORT, ()=>{
-            console.log('Server Disponible')
 			logEvent("El servidor se arranco correctamente");
         })
     },err => { 
