@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'kimappazure'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8226f708e3fd43e690f5089238922bd0 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_07bd2a1af62c4835abd00cb41fcc3784 }}
         package: .
