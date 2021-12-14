@@ -27,20 +27,6 @@ app.use( (req, res, next) => {
 app.use(logger);
 //app.use(errorHandeler);
 app.use(rooter);
-
-<<<<<<< HEAD
-rooter.get('/index(.html)?',(req,res)=>{
-=======
-app.get('/find/:id', ProductoController.getProducto);
-app.get('/all', ProductoController.getProductos);
-app.post('/save', ProductoController.saveProducto);
-app.put('/update/:id', ProductoController.updateProducto);
-app.delete('/delete/:id', ProductoController.deleteProducto);
-                               
->>>>>>> 1189c32beb152796267fe2bd05b3cfd2dadc8c44
-
-	res.sendFile(path.join(__dirname,"views","index.html"))
-});
 app.all('*',(req,res)=>{
 	res.status(404);
 if (req.accepts("html")){
