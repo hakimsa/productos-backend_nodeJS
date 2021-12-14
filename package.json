@@ -14,6 +14,7 @@
   "author": "Hakim samouh",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.18.3",
     "date-fns": "^2.27.0",
     "express": "^4.17.1",

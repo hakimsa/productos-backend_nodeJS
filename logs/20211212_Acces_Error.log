@@ -1,0 +1,273 @@
+20211212	00:45:49	El servidor se arranco correctamente
+20211212	00:45:49	Get all:200  ok
+20211212	00:45:49	Get all:200  ok
+20211212	00:45:49	Get all:200  ok
+20211212	01:20:39	El servidor se arranco correctamente
+20211212	01:20:39	Get all:200  ok
+20211212	01:21:43	El servidor se arranco correctamente
+20211212	01:21:43	Get all:200  ok
+20211212	01:22:20	El servidor se arranco correctamente
+20211212	01:22:20	/productosGET
+20211212	01:23:22	El servidor se arranco correctamente
+20211212	01:23:22	GET	/productos
+20211212	01:25:18	El servidor se arranco correctamente
+20211212	01:25:18	GET	/productos	undefined
+20211212	01:26:35	El servidor se arranco correctamente
+20211212	01:28:12	El servidor se arranco correctamente
+20211212	01:28:41	El servidor se arranco correctamente
+20211212	01:29:22	El servidor se arranco correctamente
+20211212	01:29:22	GET	/productos	[object Object]
+20211212	01:30:29	El servidor se arranco correctamente
+20211212	01:30:29	GET	/productos	function status(code) {
+  this.statusCode = code;
+  return this;
+}
+20211212	01:31:25	El servidor se arranco correctamente
+20211212	01:31:25	GET	/productos	[object Object]
+20211212	01:32:17	El servidor se arranco correctamente
+20211212	01:32:17	GET	/productos	ok
+20211212	01:33:17	El servidor se arranco correctamente
+20211212	01:34:46	El servidor se arranco correctamente
+20211212	01:35:50	El servidor se arranco correctamente
+20211212	01:35:50	GET	/productos	ok
+20211212	01:35:50	GET	/productos	ok
+20211212	01:35:50	/producto/5e0f85701c9d4400008f61feGET
+20211212	01:39:47	El servidor se arranco correctamente
+20211212	01:39:47	GET	/producto/5e0f85701c9d4400008f61fe
+20211212	01:39:47	GET	/producto/5e0f85701c9d4400008f61fe
+20211212	01:40:58	El servidor se arranco correctamente
+20211212	01:40:58	GET	/producto/5e0f85701c9d4400008f61fe	ok
+20211212	01:40:58	GET	/productos	ok
+20211212	01:42:32	El servidor se arranco correctamente
+20211212	01:43:46	El servidor se arranco correctamente
+20211212	01:43:46	GET	/productos	ok/productos
+20211212	01:46:09	El servidor se arranco correctamente
+20211212	01:46:09	GET	/productos	okhttps://www.google.com
+20211212	01:48:02	El servidor se arranco correctamente
+20211212	01:48:02	GET	/productos	originthttps://www.google.com	ok
+20211212	01:48:40	El servidor se arranco correctamente
+20211212	01:48:40	GET	/productos	origin	https://www.google.com	ok
+20211212	01:48:40	GET	/productos	origin	https://www.google.com	ok
+20211212	01:48:40	GET	/productos	origin	https://www.google.com	ok
+20211212	02:22:18	GET	/productos	origin	undefined	ok
+20211212	02:22:18	GET	/productos	origin	https://www.google.com	ok
+20211212	02:22:18	GET	/productos	origin	undefined	ok
+20211212	02:22:18	GET	/productos	origin	https://www.bing.com	ok
+20211212	02:22:18	GET	/productos	origin	https://docs.npmjs.com	ok
+20211212	02:56:33	GET	/productos	origin	undefined	ok
+20211212	02:57:29	GET	/producto/l45	origin	undefined	ok
+20211212	02:57:29	PUT	/producto/	origin	undefined	ok
+20211212	03:02:58	SyntaxError	SyntaxError: Unexpected token } in JSON at position 225
+    at JSON.parse (<anonymous>)
+    at parse (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/raw-body/index.js:224:16)
+    at done (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)	Error	Unexpected token } in JSON at position 225	
+20211212	03:11:43	PUT	/producto/	origin	undefined	ok
+20211212	03:16:00	GET	/producto/k%C3%B1	origin	undefined	ok
+20211212	03:17:40	GET	/producto/k%C3%B1	origin	undefined	ok
+20211212	03:18:25	GET	/producto/k%C3%B1	origin	undefined	ok
+20211212	03:21:11	GET	/productos	origin	undefined	ok
+20211212	03:23:56	GET	/productos	origin	undefined	ok
+20211212	03:24:35	GET	/productos	origin	undefined	ok
+20211212	03:26:29	GET	/productos	origin	undefined	ok
+20211212	03:27:12	GET	/productos	origin	undefined	ok
+20211212	03:29:32	GET	/productos	origin	undefined	ok
+20211212	03:29:32	GET	/producto/	origin	undefined	ok
+20211212	03:35:22	GET	/productos	origin	undefined	ok
+20211212	03:35:22	GET	/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	03:35:22	GET	/producto/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	03:37:22	GET	/producto/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	03:37:22	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:37:22	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:37:22	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:37:22	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:38:51	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:44:28	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:44:28	undefined	undefinederror
+20211212	03:45:04	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:45:04	undefined	undefinederror
+20211212	03:45:45	GET	/producto/5e0f85701c9d4400008f61f	origin	undefined	ok
+20211212	03:45:45	undefined	undefinederror
+20211212	03:54:21	ReferenceError		Error	logEvent is not defined	
+20211212	03:56:03	ReferenceError		Error	logEvent is not defined	
+20211212	03:57:23	ReferenceError		Error	logEvent is not defined	
+20211212	13:17:13	ReferenceError		Error	logEvent is not defined	
+20211212	13:20:02	ReferenceError		Error	logEvent is not defined	
+20211212	13:20:59	ReferenceError		Error	logEvent is not defined	
+20211212	13:21:23	ReferenceError		Error	logEvent is not defined	
+20211212	13:21:23	ReferenceError		Error	logEvent is not defined	
+20211212	13:21:23	ReferenceError		Error	logEvent is not defined	
+20211212	13:21:23	ReferenceError		Error	logEvent is not defined	
+20211212	13:23:53	ReferenceError		Error	logEvent is not defined	
+20211212	13:23:53	ReferenceError		Error	logEvent is not defined	
+20211212	13:26:12	ReferenceError		Error	logEvent is not defined	
+20211212	13:26:12	ReferenceError		Error	logEvent is not defined	
+20211212	13:27:32	ReferenceError		Error	logEvent is not defined	
+20211212	13:27:32	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:31:37	ReferenceError		Error	logEvent is not defined	
+20211212	13:32:55	ReferenceError		Error	logEvent is not defined	
+20211212	13:32:55	ReferenceError		Error	logEvent is not defined	
+20211212	13:41:58	GET	/productos	origin	undefined	ok
+20211212	13:41:58	ReferenceError		Error	message is not defined	
+20211212	13:41:58	GET	/favicon.ico	origin	undefined	ok
+20211212	13:41:58	ReferenceError		Error	message is not defined	
+20211212	13:44:20	GET	/productos	origin	undefined	ok
+20211212	13:44:20	ReferenceError		Error	message is not defined	
+20211212	13:45:03	GET	/productos	origin	undefined	ok
+20211212	13:45:03	ReferenceError		Error	message is not defined	
+20211212	13:45:03	GET	/productos	origin	undefined	ok
+20211212	13:45:03	ReferenceError		Error	message is not defined	
+20211212	13:45:03	GET	/productos	origin	undefined	ok
+20211212	13:45:03	ReferenceError		Error	message is not defined	
+20211212	13:47:56	GET	/productos	origin	undefined	ok
+20211212	13:47:56	undefined		Error	undefined	
+20211212	13:50:14	GET	/productos	origin	undefined	ok
+20211212	13:50:14	undefined		Error	undefined	
+20211212	13:50:14	GET	/productos	origin	undefined	ok
+20211212	13:50:14	undefined		Error	undefined	
+20211212	15:01:26	GET	/productos	origin	undefined	ok
+20211212	15:01:26	undefined		Error	undefined	
+20211212	15:01:26	GET	/productos	origin	undefined	ok
+20211212	15:01:26	undefined		Error	undefined	
+20211212	15:01:51	GET	/productos	origin	undefined	ok
+20211212	15:01:51	undefined		Error	undefined	
+20211212	15:01:51	GET	/producto	origin	undefined	ok
+20211212	15:01:51	undefined		Error	undefined	
+20211212	16:13:36	GET	/producto	origin	undefined	ok
+20211212	16:13:36	GET	/productos	origin	undefined	ok
+20211212	16:14:54	GET	/productos	origin	undefined	ok
+20211212	16:14:54	GET	/favicon.ico	origin	undefined	ok
+20211212	16:15:24	GET	/productos	origin	undefined	ok
+20211212	16:15:24	GET	/productos,	origin	undefined	ok
+20211212	16:15:24	GET	/productos	origin	undefined	ok
+20211212	16:15:24	GET	/producto/554	origin	undefined	ok
+20211212	16:18:21	GET	/producto/554	origin	undefined	ok
+20211212	16:18:21	GET	/producto/554	origin	undefined	ok
+20211212	16:20:13	GET	/producto/554	origin	undefined	ok
+20211212	16:20:36	GET	/producto/554	origin	undefined	ok
+20211212	16:20:36	GET	/producto/554	origin	undefined	ok
+20211212	16:21:15	GET	/producto/554	origin	undefined	ok
+20211212	16:22:38	GET	/productosd	origin	undefined	ok
+20211212	16:25:39	GET	/producto/554	origin	undefined	ok
+20211212	16:25:39	CastError		Error	Cast to ObjectId failed for value "554" at path "_id" for model "productos"	
+20211212	16:25:39	GET	/productos,	origin	undefined	ok
+20211212	16:25:39	GET	/productosd	origin	undefined	ok
+20211212	16:26:58	GET	/productos,	origin	undefined	ok
+20211212	16:27:11	GET	/productos,	origin	undefined	ok
+20211212	16:28:39	GET	/productos,	origin	undefined	ok
+20211212	16:28:39	GET	/productos	origin	undefined	ok
+20211212	16:28:39	GET	/producto/85	origin	undefined	ok
+20211212	16:28:39	CastError		Error	Cast to ObjectId failed for value "85" at path "_id" for model "productos"	
+20211212	16:28:39	GET	/producto/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	16:38:09	MongoError		Error	authentication fail	
+20211212	16:38:56	MongoError		Error	authentication fail	MongoError: authentication fail
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/topologies/replset.js:1458:15
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/connection/pool.js:869:7
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/connection/pool.js:845:20
+    at finish (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/auth/scram.js:233:16)
+    at handleEnd (/home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/auth/scram.js:243:7)
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/auth/scram.js:352:15
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+20211212	16:39:23	ReferenceError		Error	error is not defined	ReferenceError: error is not defined
+    at /home/hakim/Desarrollo/productos-backend_nodeJS/index.js:38:14
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+20211212	16:39:56	ReferenceError		Error	error is not defined	ReferenceError: error is not defined
+20211212	16:40:20	ReferenceError		Error	error is not defined	ReferenceError: error is not defined
+20211212	16:40:50	ReferenceError		Error	error is not defined	ReferenceError: error is not defined
+20211212	16:41:03	ReferenceError		Error	error is not defined	
+20211212	16:41:29	GET	/productos	origin	undefined	ok
+20211212	16:41:29	GET	/producto/54	origin	undefined	ok
+20211212	16:41:29	CastError		Error	Cast to ObjectId failed for value "54" at path "_id" for model "productos"	
+20211212	16:41:58	MongoError		Error	authentication fail	
+20211212	16:42:08	GET	/productos	origin	https://hakim-backend-productos.herokuapp.com	ok
+20211212	16:42:08	GET	/producto/54	origin	undefined	ok
+20211212	16:42:08	CastError		Error	Cast to ObjectId failed for value "54" at path "_id" for model "productos"	
+20211212	17:07:29	GET	/all	origin	undefined	ok
+20211212	17:13:19	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	17:15:13	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	17:15:13	GET	/all	origin	undefined	ok
+20211212	17:15:13	GET	/find/855	origin	undefined	ok
+20211212	17:15:13	CastError		Error	Cast to ObjectId failed for value "855" at path "_id" for model "productos"	
+20211212	17:16:25	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	17:16:25	PUT	/update/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	17:16:25	POST	/save	origin	undefined	ok
+20211212	17:33:31	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	17:35:48	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	17:44:35	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	20:35:48	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	20:35:48	GET	/find/5e7a29bc1c9d44000018c3ac	origin	undefined	ok
+20211212	20:35:48	GET	/ndex	origin	undefined	ok
+20211212	20:35:48	GET	/ndex	origin	undefined	ok
+20211212	20:35:48	GET	/index	origin	undefined	ok
+20211212	20:37:39	GET	/index	origin	undefined	ok
+20211212	20:37:39	GET	/index	origin	undefined	ok
+20211212	20:37:39	GET	/index	origin	undefined	ok
+20211212	20:38:33	GET	/index	origin	undefined	ok
+20211212	20:38:45	GET	/index	origin	undefined	ok
+20211212	20:41:35	GET	/index.html	origin	undefined	ok
+20211212	20:41:35	GET	/index	origin	undefined	ok
+20211212	20:42:26	GET	/index	origin	undefined	ok
+20211212	20:57:51	GET	/	origin	undefined	ok
+20211212	20:58:20	GET	/	origin	undefined	ok
+20211212	20:58:50	GET	/	origin	undefined	ok
+20211212	20:58:50	GET	/productos	origin	undefined	ok
+20211212	20:58:50	GET	/all	origin	undefined	ok
+20211212	20:58:50	GET	/index	origin	undefined	ok
+20211212	21:00:00	GET	/index	origin	undefined	ok
+20211212	21:00:00	GET	/	origin	undefined	ok
+20211212	21:00:00	GET	/all	origin	undefined	ok
+20211212	21:00:00	GET	/all	origin	undefined	ok
+20211212	21:00:00	GET	/productos	origin	undefined	ok
+20211212	21:00:00	GET	/	origin	undefined	ok
+20211212	21:03:28	GET	/all	origin	undefined	ok
+20211212	21:03:28	GET	/index	origin	undefined	ok
+20211212	21:03:28	GET	/index/all	origin	undefined	ok
+20211212	21:03:28	GET	/all	origin	undefined	ok
+20211212	21:12:49	GET	/all	origin	undefined	ok
+20211212	21:13:02	GET	/all	origin	undefined	ok
+20211212	21:13:02	GET	/all	origin	undefined	ok
+20211212	21:13:02	GET	/	origin	undefined	ok
+20211212	21:13:02	GET	/	origin	undefined	ok
+20211212	21:14:33	GET	/	origin	undefined	ok
+20211212	21:14:33	GET	/	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:14:33	GET	/all	origin	undefined	ok
+20211212	21:15:31	GET	/all	origin	undefined	ok
+20211212	21:15:31	GET	/all	origin	undefined	ok
+20211212	21:15:31	GET	/index	origin	undefined	ok
+20211212	21:15:31	GET	/index	origin	undefined	ok
+20211212	21:19:17	GET	/index	origin	undefined	ok
+20211212	21:19:44	GET	/index	origin	undefined	ok
+20211212	21:19:44	GET	/	origin	undefined	ok
+20211212	21:22:22	GET	/index	origin	undefined	ok
+20211212	21:22:22	GET	/index.html	origin	undefined	ok
+20211212	21:22:22	GET	/all	origin	undefined	ok
+20211212	21:23:50	GET	/index	origin	undefined	ok
+20211212	21:23:50	GET	/	origin	undefined	ok
+20211212	21:27:08	GET	/	origin	undefined	ok
+20211212	21:27:08	GET	/fgf	origin	undefined	ok
+20211212	21:27:08	GET	/all	origin	undefined	ok
+20211212	21:27:08	GET	/index	origin	undefined	ok
+20211212	21:28:02	GET	/index	origin	undefined	ok
+20211212	21:28:02	GET	/find/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20211212	21:56:37	GET	/	origin	undefined	ok
+20211212	21:56:37	GET	/all	origin	undefined	ok
+20211212	21:56:37	GET	/	origin	undefined	ok
+20211212	21:56:37	GET	/all	origin	undefined	ok
+20211212	21:56:37	GET	/index	origin	undefined	ok
+20211212	21:56:37	GET	/all	origin	undefined	ok

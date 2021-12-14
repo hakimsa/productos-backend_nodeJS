@@ -1,11 +1,15 @@
 ﻿const express = require('express');
 const bodyParser = require('body-parser');
-const ProductoController = require('./ProductoController');
+const ProductoController = require('./controllers/ProductoController');
 const mongoose = require('mongoose');
-const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT || 8088;
 const app = express();
-const logEvent=require("./logEvents/LogEvents");
-const {serv,user,pass,cluster,db}=require("./dbConfig/conf")
+const {logger,logEvents}=require("./midlewares/LogEvents");
+const errorHandeler =require("./midlewares/errorHandlers");
+const {serv,user,pass,cluster,db}=require("./dbConfig/conf");
+const rooter = require('./roots/api/productos');
+const roote = require('./roots/root');
+const path=require("path");
 app.use(bodyParser.urlencoded( {extended:false} ));
 app.use(bodyParser.json());
 const conexion=(serv+user+pass+cluster+db+"?retryWrites=true");
@@ -20,27 +24,38 @@ app.use( (req, res, next) => {
 	res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE')
 	next(); // para que se salga de esta función
 })
+app.use(logger);
+//app.use(errorHandeler);
+app.use(rooter);
 
-app.get('/producto/:id', ProductoController.getProducto);
-app.get('/productos', ProductoController.getProductos);
-app.post('/producto', ProductoController.saveProducto);
-app.put('/producto/:id', ProductoController.updateProducto);
-app.delete('/producto/:id', ProductoController.deleteProducto);
-                               
+rooter.get('/index(.html)?',(req,res)=>{
 
+	res.sendFile(path.join(__dirname,"views","index.html"))
+});
+app.all('*',(req,res)=>{
+	res.status(404);
+if (req.accepts("html")){
+	res.sendFile(path.join(__dirname,"views","404.html"))
 
+}else if (req.accepts("json")){
+
+	res.json({
+
+		"error":"404 Not found"});
+}else {
+	res.type("txt").send("404 Not found");
+
+}
+}
+);
 mongoose.connect(conexion.toString(),
  { useNewUrlParser: true, useFindAndModify:false }).then(
+    ()=> {  
 	
-    () => {  
-    
         app.listen(PORT, ()=>{
-	    logEvent("El servidor se arranco correctamente");
-        })
-    },err => { 
-		logEvent(err);
-		 }
-)
+        });
+	}).catch(
+error=>{
 
-
-
+	logEvents( error.name +"\t" +"\t"+"Error" +"\t"+error.message+"\t");
+});
