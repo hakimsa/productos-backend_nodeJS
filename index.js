@@ -21,11 +21,11 @@ app.use( (req, res, next) => {
 	next(); // para que se salga de esta función
 })
 
-app.get('/producto/:id', ProductoController.getProducto);
-app.get('/productos', ProductoController.getProductos);
-app.post('/producto', ProductoController.saveProducto);
-app.put('/producto/:id', ProductoController.updateProducto);
-app.delete('/producto/:id', ProductoController.deleteProducto);
+app.get('/find/:id', ProductoController.getProducto);
+app.get('/all', ProductoController.getProductos);
+app.post('/save', ProductoController.saveProducto);
+app.put('/update/:id', ProductoController.updateProducto);
+app.delete('/delete/:id', ProductoController.deleteProducto);
                                
 
 
