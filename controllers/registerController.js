@@ -17,13 +17,13 @@ const handleNewUser=async(req,res)=>{
         "message": "username and pwd required"
     });
 
-    //check for dupilcadet username en database
+    //check for dupilcadet username en database verifiction
     const duplicate=userDB.users.find(person=>person.username==user);
     if(duplicate)return res.sendStatus(409);//conflict
     try{
         //encryptar password
         const hasdpwd=await bcrypt.hash(pwd,10);
-        //store the user
+        //store the user 
 
         const newUser={ "username":user, "password":hasdpwd};
         userDB.setUsers([...userDB.users,newUser]);
