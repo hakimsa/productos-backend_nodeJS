@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''echo " Clearing packages en process"
 Name="kimo"
-echo (Name)'''
+echo ($Name)'''
       }
     }
 
