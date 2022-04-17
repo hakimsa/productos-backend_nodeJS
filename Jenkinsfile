@@ -20,6 +20,7 @@ cat index.js'''
             sh '''echo "ADD PACKAGES TO PROYECT"
 cd logs
 ls -ltr 
+rm 20211213_A*.log
 '''
           }
         }
