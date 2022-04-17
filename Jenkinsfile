@@ -20,6 +20,8 @@ cat index.js'''
             sh '''echo "ADD PACKAGES TO PROYECT"
 cd logs
 ls -ltr 
+rm 20211211_Acces_Error.log
+ls -ltr
 
 '''
           }
