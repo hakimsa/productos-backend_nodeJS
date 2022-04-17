@@ -8,8 +8,9 @@ Name="kimo"
 a=50
 b=50
 echo $Name
-echo $a+$b
-ls'''
+echo "total es ${a+b}"
+ls
+cat index.js'''
       }
     }
 
