@@ -19,7 +19,7 @@ cat index.js'''
           steps {
             sh '''echo "ADD PACKAGES TO PROYECT"
 cd logs
-ls -ltr logs
+ls -ltr 
 '''
           }
         }
