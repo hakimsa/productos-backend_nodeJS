@@ -6,9 +6,9 @@ pipeline {
         sh '''echo " Clearing packages en process"
 Name="kimo"
 echo $HOSTNAME
-echo "this the name :"+$Name
+echo "this the name "+$Name
 ls
-node --version
+apt update
 cat index.js'''
       }
     }
