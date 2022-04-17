@@ -7,8 +7,8 @@ pipeline {
 Name="kimo"
 a=50;
 b=50;
-echo "this the name :$Name"
-echo "total es ${a + b}"
+echo "this the name :+$Name"
+echo ($a + $b)
 ls
 node -version
 cat index.js'''
