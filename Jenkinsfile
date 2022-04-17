@@ -5,10 +5,10 @@ pipeline {
       steps {
         sh '''echo " Clearing packages en process"
 Name="kimo"
-let a=50;
-let b=50;
+a=50;
+b=50;
 echo "this the name :$Name"
-echo "total es ${a+b}"
+echo "total es ${a + b}"
 ls
 node -version
 cat index.js'''
