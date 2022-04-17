@@ -8,7 +8,8 @@ Name="kimo"
 a=50
 b=50
 echo $Name
-echo "Total es"+$a+$b'''
+echo $a+$b
+ls'''
       }
     }
 
