@@ -18,10 +18,12 @@ cat index.js'''
         stage('Add packages') {
           steps {
             sh '''echo "ADD PACKAGES TO PROYECT"
-cd logs
+cd logs 
 ls -ltr 
 rm 20211211_Acces_Error.log
 ls -ltr
+cd ..
+node index.js
 
 '''
           }
