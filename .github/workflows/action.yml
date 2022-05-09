@@ -17,7 +17,8 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "💡 accion to add vaiable"
-      - run : export UNXAPLI="/users"
       - run : mkdir users
+      - run : export UNXAPLI="/users"
+      - run : echo /etc/
       - run : echo $UNXAPLI
       - run : echo $?
