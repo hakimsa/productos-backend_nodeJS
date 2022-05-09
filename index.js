@@ -46,7 +46,6 @@ if (req.accepts("html")){
 mongoose.connect(conexion.toString(),
  { useNewUrlParser: true, useFindAndModify:false }).then(
     ()=> {  
-	
         app.listen(PORT, ()=>{
         });
 	}).catch(

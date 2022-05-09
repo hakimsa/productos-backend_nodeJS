@@ -1,7 +1,7 @@
 const express=require("express");
 const ProductoController = require('../../controllers/ProductoController');
 const rooter =express.Router();
-const path=require("path");
+//const path=require("path");
 rooter.route('/all').get(ProductoController.getProductos);
 rooter.route('/find/:id').get(ProductoController.getProducto);
 rooter.route('/save').post(ProductoController.saveProducto);

@@ -1,0 +1,13 @@
+20220509	13:03:21	GET	/all	origin	undefined	ok
+20220509	13:03:21	GET	/favicon.ico	origin	undefined	ok
+20220509	13:03:21	GET	/alll	origin	undefined	ok
+20220509	13:03:21	GET	/all	origin	undefined	ok
+20220509	13:03:21	GET	/find/5e0f85701c9d4400008f61fe	origin	undefined	ok
+20220509	13:03:21	POST	/save/	origin	undefined	ok
+20220509	13:03:21	GET	/find/6278f6e3168b7566870d30b2	origin	undefined	ok
+20220509	13:03:21	POST	/update/6278f6e3168b7566870d30b2	origin	undefined	ok
+20220509	13:03:21	POST	/update/6278f6e3168b7566870d30b2	origin	undefined	ok
+20220509	13:03:21	POST	/update/	origin	undefined	ok
+20220509	13:03:21	POST	/update/6278f6e3168b7566870d30b2	origin	undefined	ok
+20220509	13:03:21	PUT	/update/6278f6e3168b7566870d30b2	origin	undefined	ok
+20220509	13:03:21	GET	/find/6278f6e3168b7566870d30b2	origin	undefined	ok
