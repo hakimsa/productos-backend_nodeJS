@@ -8,7 +8,6 @@ let formatDateLog=format(new Date(),"yyyyMMdd");
 const logEvents=async(message)=>{
 const dateTime=formatDate;
 const logItem= dateTime+"\t"+message+"\n";
-
 console.log(logItem);
 try{
 
