@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   
-  parametrs{
+  parameters{
     string (name : 'name_branch')
   }
   stages {
